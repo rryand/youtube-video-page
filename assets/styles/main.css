@@ -150,16 +150,21 @@ nav {
   height: 100%;
 }
 
-#primary-info {
-  padding: 20px 0 8px 0;
+/** Primary Info **/
+
+.info {
   border-bottom: 1px solid var(--line-break);
+}
+
+.primary {
+  padding: 20px 0 8px 0;
 }
 
 #video-title {
   font-size: 18px;
 }
 
-#info {
+.primary div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,4 +196,41 @@ nav {
 
 .liked {
   color: rgb(62, 166, 255);
+}
+
+/** Secondary Info **/
+
+#channel-avatar {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+#channel-btn {
+  margin-right: 16px;
+}
+
+.secondary .top {
+  padding-top: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.channel-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.channel-wrapper a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.channel-wrapper span {
+  color: var(--gray);
+  font-size: 13px;
 }
