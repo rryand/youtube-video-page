@@ -163,7 +163,7 @@ nav {
 }
 
 .primary {
-  padding: 20px 0 8px 0;
+  padding-top: 20px;
 }
 
 .primary div {
@@ -179,6 +179,7 @@ nav {
 
 #info-text {
   color: var(--gray);
+  padding-bottom: 8px;
 }
 
 #info-button-wrapper {
@@ -189,6 +190,7 @@ nav {
   display: inherit;
   align-items: center;
   color: var(--gray);
+  padding-bottom: 8px;
 }
 
 .info-button .icon {
@@ -199,8 +201,16 @@ nav {
   margin-left: 8px;
 }
 
+.info-button-text {
+  font-weight: 500;
+}
+
 .liked {
   color: rgb(62, 166, 255);
+}
+
+div.liked {
+  border-bottom: 2px solid rgb(62, 166, 255);
 }
 
 /** Secondary Info **/
