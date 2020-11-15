@@ -1,6 +1,11 @@
 :root {
   --gray: rgb(170, 170, 170);
   --line-break: rgba(255, 255, 255, 0.1);
+  --blue-like: rgb(62, 166, 255);
+}
+
+*:focus {
+  outline: none;
 }
 
 html {
@@ -11,7 +16,7 @@ html {
 }
 
 a {
-  color: rgb(62, 166, 255);
+  color: var(--blue-like);
   text-decoration: none;
 }
 
@@ -94,7 +99,6 @@ nav {
 }
 
 #search-group input:focus {
-  outline: 0;
   border-color: rgb(27, 98, 185);
 }
 
@@ -118,7 +122,7 @@ nav {
   border: 0;
 }
 
-#avatar {
+#user-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -325,4 +329,106 @@ div.liked {
 
 #sort-label {
   color: var(--gray);
+}
+
+#user-comment-wrapper {
+  display: flex;
+  align-content: center;
+  margin-bottom: 32px;
+}
+
+#user-comment-wrapper input {
+  height: 21px;
+  flex-grow: 2;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--line-break);
+  color: rgb(255, 255, 255);
+  font: inherit;
+  font-size: 14px;
+  padding-bottom: 4px;
+  transition: border 0.25s;
+}
+
+#user-comment-wrapper input::placeholder {
+  opacity: 1;
+  color: rgb(170, 170, 170);
+}
+
+#user-comment-wrapper input:-ms-input-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+#user-comment-wrapper input::-ms-input-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+#user-comment-wrapper input:focus {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.comment-details {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.comment-details p {
+  line-height: 20px;
+  margin: 6px 0;
+}
+
+.author {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.timestamp {
+  color: var(--gray);
+}
+
+.timestamp:hover {
+  color: rgb(255, 255, 255);
+}
+
+.comment-interaction  {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.comment-interaction img {
+  height: 16px;
+  width: 16px;
+  padding: 8px 8px 8px 0;
+  cursor: pointer;
+}
+
+.comment-interaction .count {
+  margin-right: 16px;
+}
+
+.comment-reply {
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.view-replies {
+  color: var(--blue-like);
+  font-weight: 500;
+  margin-top: 4px;
 }
