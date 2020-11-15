@@ -432,3 +432,120 @@ div.liked {
   font-weight: 500;
   margin-top: 4px;
 }
+
+/* Aside */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 14px;
+  margin-left: 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(96, 96, 96);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 0px;
+  bottom: -4px;
+  background-color: rgb(144, 144, 144);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  background-color: #2196F3;
+}
+
+input:focus + .slider:before {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* End Toggle */
+
+#header {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+#upnext {
+  flex-grow: 2;
+  font-size: 16px;
+}
+
+#autoplay {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+#upnext-video {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line-break);
+  margin-bottom: 16px;
+}
+
+.video-entry {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.thumbnail {
+  margin-right: 8px;
+}
+
+.details {
+  display: inherit;
+  flex-direction: column;
+  padding-right: 24px;
+}
+
+.details .title {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.details .channel, .details .misc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 18px;
+}
