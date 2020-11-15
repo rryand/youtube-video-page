@@ -7,6 +7,7 @@ html {
   background-color: rgb(24, 24, 24);
   color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .enable-pointer {
@@ -83,6 +84,7 @@ nav {
   border: 1px solid rgb(48, 48, 48);
   width: 562px;
   padding: 10px;
+  font: inherit;
   font-size: 16px;
   line-height: 24px;
 }
@@ -172,7 +174,6 @@ nav {
 }
 
 #info-text {
-  font-size: 14px;
   color: var(--gray);
 }
 
@@ -218,20 +219,43 @@ nav {
   align-items: center;
 }
 
-.channel-wrapper {
+#channel-wrapper {
+  flex-grow: 2;
   display: flex;
   flex-direction: column;
   margin-bottom: 5px;
 }
 
-.channel-wrapper a {
+#channel-wrapper a {
   color: #FFF;
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 2px;
 }
 
-.channel-wrapper span {
+#channel-wrapper span {
   color: var(--gray);
   font-size: 13px;
+}
+
+#subscription-wrapper {
+  display: flex;
+}
+
+#subscription-wrapper button {
+  background-color: var(--line-break);
+  border: 0;
+  cursor: pointer;
+  color: var(--gray);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  margin: 2px 4px;
+}
+
+#subscription-wrapper img {
+  height: 24px;
+  width: 24px;
+  padding: 8px;
 }
