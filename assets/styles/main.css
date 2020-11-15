@@ -10,6 +10,11 @@ html {
   font-size: 14px;
 }
 
+a {
+  color: rgb(62, 166, 255);
+  text-decoration: none;
+}
+
 .enable-pointer {
   cursor: pointer;
 }
@@ -49,7 +54,6 @@ nav {
   flex-direction: row;
   width: 80px;
   height: 24px;
-  text-decoration: none;
 }
 
 #logo-container img {
@@ -162,15 +166,15 @@ nav {
   padding: 20px 0 8px 0;
 }
 
-#video-title {
-  font-size: 18px;
-  line-height: 24px;
-}
-
 .primary div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#video-title {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 #info-text {
@@ -184,7 +188,6 @@ nav {
 .info-button {
   display: inherit;
   align-items: center;
-  text-decoration: none;
   color: var(--gray);
 }
 
@@ -202,6 +205,18 @@ nav {
 
 /** Secondary Info **/
 
+.secondary {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.secondary .top {
+  padding-top: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
 #channel-avatar {
   height: 48px;
   width: 48px;
@@ -210,13 +225,6 @@ nav {
 
 #channel-btn {
   margin-right: 16px;
-}
-
-.secondary .top {
-  padding-top: 16px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
 }
 
 #channel-wrapper {
@@ -228,7 +236,6 @@ nav {
 
 #channel-wrapper a {
   color: #FFF;
-  text-decoration: none;
   font-size: 14px;
   margin-bottom: 2px;
 }
@@ -258,4 +265,21 @@ nav {
   height: 24px;
   width: 24px;
   padding: 8px;
+}
+
+#video-description {
+  margin-left: 64px;
+}
+
+#video-description p {
+  line-height: 21px;
+}
+
+#show-more {
+  display: block;
+  color: var(--gray);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
 }
